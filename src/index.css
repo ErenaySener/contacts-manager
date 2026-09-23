@@ -253,11 +253,12 @@ main {
 /* Home page */
 
 .homeHero {
-  min-height: calc(100vh - 168px);
+  min-height: calc(100vh - 72px);
   display: grid;
   grid-template-columns: 1.1fr 0.9fr;
-  align-items: center;
+  align-items: start;
   gap: 80px;
+  padding-top: 32px;
 }
 
 .heroContent {
