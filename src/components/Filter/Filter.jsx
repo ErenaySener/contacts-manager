@@ -7,10 +7,13 @@ export default function Filter() {
   const filter = useSelector(selectNameFilter);
 
   return (
-    <label>
-      Find contacts by name
+    <label className="filterField">
+      <span className="filterLabel">Search contacts</span>
+
       <input
+        className="filterInput"
         type="text"
+        placeholder="Search by name..."
         value={filter}
         onChange={event => dispatch(changeFilter(event.target.value))}
       />
