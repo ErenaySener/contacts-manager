@@ -13,18 +13,32 @@ export default function LoginForm() {
         actions.resetForm();
       }}
     >
-      <Form>
-        <label>
-          Email
-          <Field type="email" name="email" required />
+      <Form className="authForm">
+        <label className="formField">
+          <span>Email</span>
+          <Field
+            className="formInput"
+            type="email"
+            name="email"
+            placeholder="you@example.com"
+            required
+          />
         </label>
 
-        <label>
-          Password
-          <Field type="password" name="password" required />
+        <label className="formField">
+          <span>Password</span>
+          <Field
+            className="formInput"
+            type="password"
+            name="password"
+            placeholder="Enter your password"
+            required
+          />
         </label>
 
-        <button type="submit">Login</button>
+        <button className="authButton" type="submit">
+          Login
+        </button>
       </Form>
     </Formik>
   );
