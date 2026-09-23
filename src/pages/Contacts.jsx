@@ -14,11 +14,43 @@ export default function Contacts() {
   }, [dispatch]);
 
   return (
-    <div>
-      <h1>Contacts</h1>
-      <ContactForm />
-      <Filter />
-      <ContactList />
-    </div>
+    <section className="contactsPage">
+      <div className="contactsHeader">
+        <span className="heroBadge">Your phonebook</span>
+
+        <h1 className="contactsTitle">Manage your contacts</h1>
+
+        <p className="contactsSubtitle">
+          Add new contacts, search your phonebook and keep everything
+          organized in one place.
+        </p>
+      </div>
+
+      <div className="contactsGrid">
+        <div className="contactsPanel">
+          <h2 className="contactsPanelTitle">Add contact</h2>
+          <p className="contactsPanelText">
+            Save a new person to your phonebook.
+          </p>
+
+          <ContactForm />
+        </div>
+
+        <div className="contactsPanel contactsListPanel">
+          <div className="contactsListTop">
+            <div>
+              <h2 className="contactsPanelTitle">Your contacts</h2>
+              <p className="contactsPanelText">
+                Search and manage your saved contacts.
+              </p>
+            </div>
+
+            <Filter />
+          </div>
+
+          <ContactList />
+        </div>
+      </div>
+    </section>
   );
 }
