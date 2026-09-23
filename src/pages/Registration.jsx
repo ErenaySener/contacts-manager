@@ -2,9 +2,15 @@ import RegistrationForm from '../components/RegistrationForm/RegistrationForm.js
 
 export default function Registration() {
   return (
-    <div>
-      <h1>Registration</h1>
-      <RegistrationForm />
-    </div>
+    <section className="authPage">
+      <div className="authCard">
+        <h1 className="authTitle">Create account</h1>
+        <p className="authSubtitle">
+          Register to start managing your contacts.
+        </p>
+
+        <RegistrationForm />
+      </div>
+    </section>
   );
 }
