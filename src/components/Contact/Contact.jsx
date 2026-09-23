@@ -5,10 +5,23 @@ export default function Contact({ contact }) {
   const dispatch = useDispatch();
 
   return (
-    <li>
-      <p>{contact.name}</p>
-      <p>{contact.number}</p>
-      <button type="button" onClick={() => dispatch(deleteContact(contact.id))}>
+    <li className="contactItem">
+      <div className="contactDetails">
+        <div className="contactListAvatar">
+          {contact.name.charAt(0).toUpperCase()}
+        </div>
+
+        <div className="contactInfo">
+          <p className="contactName">{contact.name}</p>
+          <p className="contactNumber">{contact.number}</p>
+        </div>
+      </div>
+
+      <button
+        className="deleteContactButton"
+        type="button"
+        onClick={() => dispatch(deleteContact(contact.id))}
+      >
         Delete
       </button>
     </li>
