@@ -13,11 +13,22 @@ export default function ContactList() {
   const error = useSelector(selectError);
 
   return (
-    <div>
-      {isLoading && <p>Loading...</p>}
-      {error && <p>{error}</p>}
+    <div className="contactListWrapper">
+      {isLoading && <p className="contactsStatus">Loading...</p>}
 
-      <ul>
+      {error && (
+        <p className="contactsStatus contactsError">
+          Something went wrong. Please try again.
+        </p>
+      )}
+
+      {!isLoading && !error && contacts.length === 0 && (
+        <p className="contactsStatus">
+          No contacts found.
+        </p>
+      )}
+
+      <ul className="contactList">
         {contacts.map(contact => (
           <Contact key={contact.id} contact={contact} />
         ))}
