@@ -249,3 +249,166 @@ main {
     padding: 28px 22px;
   }
 }
+
+/* Home page */
+
+.homeHero {
+  min-height: calc(100vh - 168px);
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  align-items: center;
+  gap: 80px;
+}
+
+.heroContent {
+  max-width: 580px;
+}
+
+.heroBadge {
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 7px 12px;
+  border-radius: 999px;
+  background: #eeecff;
+  color: #4f46e5;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.heroTitle {
+  margin: 0;
+  font-size: clamp(42px, 5vw, 64px);
+  line-height: 1.05;
+  letter-spacing: -2px;
+  color: #1f2937;
+}
+
+.heroText {
+  max-width: 520px;
+  margin: 24px 0 32px;
+  font-size: 17px;
+  line-height: 1.7;
+  color: #6b7280;
+}
+
+.heroActions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.heroPrimaryButton,
+.heroSecondaryButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 120px;
+  height: 46px;
+  padding: 0 20px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.heroPrimaryButton {
+  background: #4f46e5;
+  color: #ffffff;
+}
+
+.heroPrimaryButton:hover {
+  background: #4338ca;
+}
+
+.heroSecondaryButton {
+  border: 1px solid #d1d5db;
+  background: #ffffff;
+  color: #374151;
+}
+
+.heroSecondaryButton:hover {
+  border-color: #4f46e5;
+  color: #4f46e5;
+}
+
+.heroPreview {
+  padding: 28px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 18px;
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.1);
+}
+
+.previewHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 22px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.previewCount {
+  font-size: 13px;
+  font-weight: 500;
+  color: #9ca3af;
+}
+
+.previewContact {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px 0;
+  border-top: 1px solid #f0f1f4;
+}
+
+.previewContact:first-of-type {
+  border-top: none;
+}
+
+.contactAvatar {
+  width: 44px;
+  height: 44px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #eeecff;
+  color: #4f46e5;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.previewContact div:last-child {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.previewContact strong {
+  font-size: 15px;
+  color: #1f2937;
+}
+
+.previewContact span {
+  font-size: 13px;
+  color: #9ca3af;
+}
+
+@media (max-width: 800px) {
+  .homeHero {
+    grid-template-columns: 1fr;
+    gap: 48px;
+    padding-top: 24px;
+    padding-bottom: 40px;
+  }
+
+  .heroTitle {
+    font-size: 42px;
+  }
+
+  .heroPreview {
+    max-width: 520px;
+  }
+}
