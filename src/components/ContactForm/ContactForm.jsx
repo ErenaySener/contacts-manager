@@ -13,18 +13,32 @@ export default function ContactForm() {
         actions.resetForm();
       }}
     >
-      <Form>
-        <label>
-          Name
-          <Field type="text" name="name" required />
+      <Form className="contactForm">
+        <label className="formField">
+          <span>Name</span>
+          <Field
+            className="formInput"
+            type="text"
+            name="name"
+            placeholder="Contact name"
+            required
+          />
         </label>
 
-        <label>
-          Number
-          <Field type="tel" name="number" required />
+        <label className="formField">
+          <span>Phone number</span>
+          <Field
+            className="formInput"
+            type="tel"
+            name="number"
+            placeholder="+49 123 456789"
+            required
+          />
         </label>
 
-        <button type="submit">Add contact</button>
+        <button className="contactButton" type="submit">
+          Add contact
+        </button>
       </Form>
     </Formik>
   );
