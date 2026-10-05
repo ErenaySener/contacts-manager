@@ -43,3 +43,51 @@ Create a `.env` file in the project root:
 
 ```env
 VITE_API_URL=your_api_url
+
+```
+
+## Getting Started
+
+Clone the repository:
+
+```bash
+git clone https://github.com/ErenaySener/contacts-manager.git
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Create a `.env` file in the project root and add:
+
+```env
+VITE_API_URL=your_api_url
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+## Build
+
+Create a production build:
+
+```bash
+npm run build
+```
+
+Preview the production build locally:
+
+```bash
+npm run preview
+```
+
+## Author
+
+**Erenay Sener**
+
+GitHub: [ErenaySener](https://github.com/ErenaySener)
