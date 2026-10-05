@@ -2,6 +2,10 @@
 
 A React application for managing personal contacts with user authentication, protected routes, persistent sessions and REST API integration.
 
+## Live Demo
+
+[View the live application](https://erenay-contacts-manager.vercel.app/)
+
 ## Features
 
 - User registration and login
