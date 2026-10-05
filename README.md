@@ -48,6 +48,7 @@ Create a `.env` file in the project root based on `.env.example`:
 ```env
 VITE_API_URL=your_api_url
 ```
+ 
 ## Getting Started
 
 Clone the repository:
