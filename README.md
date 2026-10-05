@@ -43,13 +43,11 @@ Private and restricted routes control access to authenticated and public pages.
 
 The application communicates with a REST API using Axios.
 
-Create a `.env` file in the project root:
+Create a `.env` file in the project root based on `.env.example`:
 
 ```env
 VITE_API_URL=your_api_url
-
 ```
-
 ## Getting Started
 
 Clone the repository:
@@ -62,12 +60,6 @@ Install dependencies:
 
 ```bash
 npm install
-```
-
-Create a `.env` file in the project root and add:
-
-```env
-VITE_API_URL=your_api_url
 ```
 
 Start the development server:
