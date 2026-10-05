@@ -6,6 +6,10 @@ A React application for managing personal contacts with user authentication, pro
 
 [View the live application](https://erenay-contacts-manager.vercel.app/)
 
+## Preview
+
+![Contacts Manager Preview](./contacts-manager-preview.png)
+
 ## Features
 
 - User registration and login
