@@ -1,7 +1,8 @@
 {
-  "name": "goit-react-hw-08",
+  "name": "contacts-manager",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "description": "React contact management application with authentication, protected routes and Redux Toolkit.",
   "type": "module",
   "scripts": {
     "dev": "vite",
