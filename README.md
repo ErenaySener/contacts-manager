@@ -6,10 +6,6 @@ A React application for managing personal contacts with user authentication, pro
 
 [View the live application](https://erenay-contacts-manager.vercel.app/)
 
-## 🎯 Current Goal
-
-I'm looking for my first professional opportunity in software development where I can contribute to real-world projects, strengthen my skills and continue growing as a developer.
-
 ## Features
 
 - User registration and login
