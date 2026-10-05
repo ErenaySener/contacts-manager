@@ -1,18 +1,19 @@
 # Contacts Manager
 
-A React application for managing personal contacts with user authentication, protected routes, persistent sessions, and API integration.
+A React application for managing personal contacts with user authentication, protected routes, persistent sessions and REST API integration.
 
 ## Features
 
 - User registration and login
 - Persistent authentication
-- Protected routes for authenticated users
+- Protected and restricted routes
 - Add new contacts
 - Delete contacts
 - Search and filter contacts
-- Contact data fetched from a REST API
-- Responsive application structure
+- REST API integration with Axios
+- Redux-based state management
 - Loading and error state handling
+- Form handling with Formik
 
 ## Tech Stack
 
@@ -28,17 +29,17 @@ A React application for managing personal contacts with user authentication, pro
 
 ## Application Structure
 
-The application separates authentication, contacts, and filtering logic into dedicated Redux slices.
+The application separates authentication, contacts and filtering logic into dedicated Redux slices.
 
-Authentication state is persisted locally so users can stay signed in after refreshing the page.
+Authentication state is persisted locally, allowing users to remain signed in after refreshing the page.
 
-Private and restricted routes are used to control access to authentication and contact pages.
+Private and restricted routes control access to authenticated and public pages.
 
-## API
+## API Configuration
 
 The application communicates with a REST API using Axios.
 
-The API URL is configured through an environment variable:
+Create a `.env` file in the project root:
 
 ```env
 VITE_API_URL=your_api_url
